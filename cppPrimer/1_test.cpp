@@ -1,11 +1,14 @@
 #include <iostream>
 using namespace std;
 
+class Test{
+    public:
+    void hello(){
+        cout << "hello" << endl;
+    }
+};
 int main(){
-    int ival = 42;
-    int *p = &ival;
-    int *q = p;
-    cout << p << endl;
-    cout << *q << endl;
+    Test *p = nullptr;
+    p->hello();
     return 0;
 }
